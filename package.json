@@ -1,0 +1,63 @@
+{
+  "name": "@ironshashwat/react-proctor",
+  "version": "0.1.0",
+  "description": "Zero-server-cost, privacy-first AI proctoring and face presence monitoring for React using TensorFlow.js BlazeFace",
+  "author": "Shashwat <ironshashwat>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ironshashwat/react-proctor.git"
+  },
+  "homepage": "https://github.com/ironshashwat/react-proctor#readme",
+  "bugs": {
+    "url": "https://github.com/ironshashwat/react-proctor/issues"
+  },
+  "keywords": [
+    "proctoring",
+    "react",
+    "tensorflow",
+    "blazeface",
+    "ai-proctoring",
+    "exam-monitoring",
+    "face-detection",
+    "presence-detection",
+    "edtech",
+    "cheating-detection"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@tensorflow-models/blazeface": ">=0.1.0",
+    "@tensorflow/tfjs": ">=4.0.0",
+    "react": ">=18.0.0 || >=19.0.0",
+    "react-dom": ">=18.0.0 || >=19.0.0"
+  },
+  "devDependencies": {
+    "@tensorflow-models/blazeface": "^0.1.0",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.0"
+  }
+}
